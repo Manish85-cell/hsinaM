@@ -1,42 +1,27 @@
+
+{% extends 'layout.html' %}
 {% load static %}
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>about</title>
-        <link rel="stylesheet" href="{% static 'portfolio/style.css' %}">
-    </head>
-    <body >
+{% block content %}
 
-        <div class="container">
 
-            <div class="sidebar" >
-                Manish Upreti
-                <nav>
-                    <ul>
-                        <li><a href="/home">Home</a></li>
-                        <li><a href="/intro">Intro</a></li>
-                        <li><a href="/cv">CV</a></li>
-                        <li><a href="/blog">Blog</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="main">
-               <div class="infoContainer">
-                      <div class="devinfo">
-                         <div class="hello">Hello, My name is </div>
-                         <div class="name">Manish Upreti</div>
-                         <div class="about">Software Developer</div>
-                         <div class="more_about">I love to play badminton</div>
-                         <div class="buttons">
-                              <button>Download CV</button>
-                              <button>Contact</button>
-                         </div>
-                      </div>
-                      <div class="devPic">
-                           <img src="{% static 'manish.png' %}" alt="Manish " height="100%" style="border-radius:30%">
-                      </div>
-               </div>
-            </div>
-        </div>
-        </body>
-</html>
+<div class="main">
+
+    <div class="infoContainer">
+           <div class="devInfo">
+              <div class="hello">Hello, My name is </div>
+              <div class="name">Manish Upreti</div>
+              <div class="about">Software Developer</div>
+              <div class="more_about">I love to play badminton</div>
+              <div class="buttons">
+                   <button>Download CV</button>
+                   <button>Contact</button>
+              </div>
+           </div>
+           <div class="devPic">
+                <img src="{% static 'manish.png' %}" alt="Manish " height="100%" style="border-radius:30%">
+           </div>
+    
+    </div>
+ </div>
+ 
+{% endblock %}
