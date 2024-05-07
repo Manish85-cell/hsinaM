@@ -16,6 +16,7 @@ div {
 
 .container {
     display: flex;
+    height: 100vh;
 }
 
 .sidebar {
@@ -160,8 +161,9 @@ div {
     flex-direction: column;
     padding-left: 80px;
     padding-right: 80px;
-    width:fit-content
+    width: fit-content;
 }
+
 
 form input {
     height: 22px;
